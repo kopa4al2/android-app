@@ -1,0 +1,172 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="colorControlHighlight">#1F19840C</item>
+        <item name="listPreferredItemHeightSmall">40dp</item>
+    </style>
+
+
+    <!--//SPINNER DIALOG STYLE-->
+    <style name="SpinnerDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorError">@color/colorDarkRedNo</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowBackground">@color/colorSurface</item>
+        <item name="android:windowAnimationStyle">@style/slideInAnimation</item>
+    </style>
+
+
+    <style name="FilledButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/crimson_text</item>
+        <item name="android:drawable">@drawable/basic_button_background</item>
+        <item name="rippleColor">#7C4DFF</item>
+        <item name="backgroundTint">@color/filled_button_tint</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:animateOnClick">true</item>
+    </style>
+
+    <style name="OutlinedButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:fontFamily">@font/crimson_text</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">#98000000</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:animateOnClick">true</item>
+    </style>
+
+    <style name="SingleUserTheme" parent="Base.V14.Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <style name="slideInView" parent="AlertDialog.AppCompat.Light">
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <item name="android:windowFullscreen">false</item>
+        <!--<item name="android:padding">10dp</item>-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <item name="android:windowAnimationStyle">@style/slideInAnimation</item>
+    </style>
+
+    <style name="ChatBoxStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="android:windowEnterAnimation">@anim/anim_chatbox_show</item>
+        <item name="android:windowExitAnimation">@anim/anim_chatbox_hide</item>
+    </style>
+
+    <style name="ChatBubbleStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">7dp</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="android:maxWidth">200dp</item>
+    </style>
+
+
+    <style name="SingeCardViewDialog" parent="AlertDialog.AppCompat">
+        <item name="android:buttonBarPositiveButtonStyle">
+            @style/Widget.MaterialComponents.Button.TextButton.Dialog
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">
+            @style/Widget.MaterialComponents.Button.TextButton.Dialog
+        </item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/notifications.animation</item>
+    </style>
+
+
+
+    <style name="RatingBarTheme" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorOnSurface</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="SubHeaderText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="ContentText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/oswald</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+
+    <style name="NavigationText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/tinos</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="CheckBoxTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/crimson_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HelperTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/crimson_text</item>
+        <item name="android:textColor">#9F000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HintTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lobster</item>
+        <item name="android:textColor">#9F000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ChatBubbleTextAppearance">
+        <item name="android:fontFamily">@font/cormorant_garamond</item>
+    </style>
+
+    <style name="TextAppearanceUserInput">
+        <item name="android:fontFamily">@font/cormorant_garamond</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#66000000</item>
+    </style>
+
+
+    <style name="AppInteractionTextAppearance">
+        <!--Buttons-->
+        <item name="android:fontFamily">@font/crimson_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--ALERTDIALOG CONTENT-->
+    <style name="TextAppearance.AppCompat.Subhead" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:fontFamily">@font/oswald</item>
+    </style>
+
+
+    <!--animations-->
+    <style name="slideInAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="notifications.animation" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/anim_show_notifications</item>
+        <item name="android:windowExitAnimation">@anim/anim_hide_notifications</item>
+    </style>
+
+</resources>

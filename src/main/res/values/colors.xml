@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--#FBC02D-->
+    <color name="colorPrimaryVariant">#FF9100</color>
+
+    <color name="colorSecondary">#FFEB3B</color>
+
+
+    <color name="colorSurface">@color/colorWhite</color>
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorPrimaryLight">#81C784</color>
+
+    <color name="colorOnSecondary">#BB010101</color>
+    <color name="colorOnPrimary">#FEFEFE</color>
+
+    <color name="colorAccent">#af4cac</color>
+    <color name="colorAccentWithAlpha">#48af4cac</color>
+    <color name="colorAccent2">#6200EA</color>
+    <color name="colorAccent2WithAlpha">#486200EA</color>
+
+    <color name="triadicLight">#4cacaf</color>
+    <color name="triadicLightWithAlpha">#774cacaf</color>
+
+    <color name="triadicDark">#4f4caf</color>
+
+    <color name="colorImportant">@color/triadicDark</color>
+
+
+    <color name="colorBlue">#2196F3</color>
+
+    <!--ERROR-->
+    <color name="colorError">@color/colorErrorMaterial</color>
+    <color name="colorErrorMaterial">#f44336</color>
+
+    <!--COLORS-->
+    <color name="colorGray">#CBCBCB</color>
+    <color name="colorOnSurface">#000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <!--B00020-->
+    <color name="colorDarkRedNo">#8D0007</color>
+
+    <!--FONT-->
+    <color name="colorFontOverActionbar">@color/colorAccent</color>
+    <color name="grayWithAlpha">#AADDDDDD</color>
+
+
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout">
+
+    <data>
+
+        <variable
+            name="travel"
+            type="com.example.sharedtravel.model.IntercityTravel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/carImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:contentDescription="@string/car_image"
+                app:layout_constraintBottom_toBottomOf="@+id/connector"
+                app:layout_constraintEnd_toEndOf="@+id/connector"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toStartOf="@+id/connector"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/car_image" />
+
+            <TextView
+                android:id="@+id/startCityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/lobster"
+                android:text="@{travel.startCity}"
+                android:textColor="@color/colorBlue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text=" Start city " />
+
+            <View
+                android:id="@+id/connector"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/triadicDark"
+                app:layout_constraintBottom_toTopOf="@+id/startCityLabel"
+                app:layout_constraintEnd_toStartOf="@+id/endCityLabel"
+                app:layout_constraintStart_toEndOf="@+id/startCityLabel"
+                app:layout_constraintTop_toBottomOf="@+id/endCityLabel" />
+
+            <TextView
+                android:id="@+id/endCityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/lobster"
+                android:text="@{travel.destinationCity}"
+                android:textColor="@color/colorBlue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text=" Destination city " />
+
+            <HorizontalScrollView
+                android:id="@+id/intermediateStops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intermediateStopsLabel">
+
+                <LinearLayout
+                    intermediateStops="@{travel.intermediateCityStops}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/passangerSpaceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/lobster"
+                android:text="@string/space_for_passangers"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intermediateStops"
+                tools:text=" Passenger space" />
+
+            <TextView
+                android:id="@+id/spaceForLuggageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/lobster"
+                android:text="@string/space_for_luggage"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passangerSpaceLabel"
+                tools:text="Space for luggage" />
+
+
+            <TextView
+                android:id="@+id/dayOfDepartureLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/lobster"
+                android:text="@string/day_of_departure"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spaceForLuggageLabel" />
+
+            <TextView
+                android:id="@+id/hourOfDepartureLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/lobster"
+                android:gravity="center"
+                android:text="@string/hour_of_departure"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dayOfDepartureLabel" />
+
+            <TextView
+                android:id="@+id/day_of_departure"
+                departureDate="@{travel.departureDate}"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/crimson_text"
+                android:gravity="center"
+                android:text="@string/not_specified"
+                android:textColor="@color/colorBlue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/dayOfDepartureLabel"
+                app:layout_constraintStart_toEndOf="@+id/dayOfDepartureLabel"
+                app:layout_constraintTop_toTopOf="@+id/dayOfDepartureLabel" />
+
+            <TextView
+                android:id="@+id/hour_of_departure"
+                isHourSelected="@{travel.isHourSelected}"
+                setHour="@{travel.departureDate}"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/crimson_text"
+                android:gravity="center"
+                android:text="@string/not_specified"
+                android:textColor="@{travel.hourSelected ? @color/colorPrimary : @color/colorError}"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/hourOfDepartureLabel"
+                app:layout_constraintStart_toEndOf="@+id/hourOfDepartureLabel"
+                app:layout_constraintTop_toTopOf="@+id/hourOfDepartureLabel" />
+
+            <TextView
+                android:id="@+id/passangerSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/crimson_text"
+                android:gravity="center"
+                android:text="@{String.valueOf(travel.passengersSpace)}"
+                android:textColor="@color/colorBlue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/passangerSpaceLabel"
+                app:layout_constraintStart_toEndOf="@+id/passangerSpaceLabel"
+                app:layout_constraintTop_toTopOf="@+id/passangerSpaceLabel" />
+
+            <TextView
+                android:id="@+id/spaceForLuggage"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/crimson_text"
+                android:gravity="center"
+                android:text="@{travel.spaceForLuggage ? @string/yes : @string/no}"
+                android:textColor="@{travel.spaceForLuggage ? @color/colorPrimary : @color/colorError}"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/spaceForLuggageLabel"
+                app:layout_constraintStart_toEndOf="@+id/spaceForLuggageLabel"
+                app:layout_constraintTop_toTopOf="@+id/spaceForLuggageLabel" />
+
+            <TextView
+                android:id="@+id/intermediateStopsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_horizontal"
+                android:text="@string/intermediate_stops"
+                android:textColor="@color/colorOnSurface"
+                android:textStyle="bold"
+                android:visibility="@{travel.intermediateCityStops.length > 0 ? View.VISIBLE : View.GONE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/startCityLabel" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/lobster"
+                android:text="@string/additional_info_hint"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="@+id/hourOfDepartureLabel"
+                app:layout_constraintTop_toBottomOf="@+id/hourOfDepartureLabel" />
+
+            <TextView
+                android:id="@+id/moreInfoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/crimson_text"
+                android:paddingBottom="10dp"
+                android:text="@{travel.additionalInfo.length() > 0 ? travel.additionalInfo : @string/none}"
+                android:textColor="@{travel.additionalInfo.length() > 0 ? @color/colorBlue : @color/colorError}"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:text=" additional info possible long long long city " />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

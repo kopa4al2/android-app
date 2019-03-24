@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notification_sender_profile_picture"
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/notification_sender_button"
+        android:background="@drawable/button_ripple"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/montserrat"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textStyle="bold"
+        android:textColor="@color/triadicDark"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

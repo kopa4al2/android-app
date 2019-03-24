@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_info"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    app:cardBackgroundColor="@color/colorSecondary"
+    app:cardElevation="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--style="@android:style/Widget.Holo.RatingBar.Indicator"-->
+        <RatingBar
+            android:id="@+id/user_rating_bar"
+            style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="15dp"
+            android:isIndicator="true"
+            android:rating="0"
+            android:theme="@style/RatingBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/content_description_profile_picture"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/blank_profile_picture"
+            app:civ_circle_background_color="@color/colorGray"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp"
+            app:layout_constraintCircleAngle="50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_rating_bar" />
+
+        <TextView
+            android:id="@+id/tv_profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textAppearance="@style/SubHeaderText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image_view"
+            tools:text="Stefan the befan" />
+
+
+        <LinearLayout
+            android:id="@+id/email_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_profile_username">
+
+            <TextView
+                android:id="@+id/user_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/email"
+                android:textAppearance="@style/SubHeaderText"
+                android:textSize="@dimen/profile_label_text_size"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:textAppearance="@style/ContentText"
+                android:textSize="@dimen/regular_text_size"
+                tools:text="sdi@mail.bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_holder">
+
+            <TextView
+                android:id="@+id/label_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/label_phone"
+                android:textSize="@dimen/profile_label_text_size"
+                android:textStyle="italic"
+                android:textAppearance="@style/SubHeaderText"
+                tools:text="Phone number:" />
+
+            <TextView
+                android:id="@+id/tv_user_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:textAppearance="@style/ContentText"
+                android:textSize="@dimen/regular_text_size"
+                tools:text="+359894355969" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more_info_holder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/email_holder"
+            app:layout_constraintTop_toBottomOf="@+id/phone_holder">
+
+            <TextView
+                android:id="@+id/label_more_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_info_hint"
+                android:textAppearance="@style/SubHeaderText"
+                android:textSize="@dimen/profile_label_text_size"
+                android:textStyle="italic" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:textAppearance="@style/ContentText"
+                    android:textSize="@dimen/regular_text_size"
+                    android:id="@+id/tv_user_more_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.card.MaterialCardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.card.MaterialCardView
+    android:id="@+id/new_notifications_view"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:maxWidth="200dp"
+    app:cardBackgroundColor="@color/triadicLight"
+    app:cardElevation="11dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_show_all_notifications"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:padding="16dp"
+        android:minHeight="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_all_messages"
+        android:textColor="@color/triadicDark"
+        android:textStyle="bold" />
+    <ScrollView
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/notification_messages_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="0dp" >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_list_new_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</android.support.design.card.MaterialCardView>

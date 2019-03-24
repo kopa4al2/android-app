@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.Holo.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/reviewer_username"
+        app:layout_constraintEnd_toEndOf="@+id/reviewerReview"
+        app:layout_constraintTop_toTopOf="@+id/reviewer_username" />
+
+    <TextView
+        android:id="@+id/reviewer_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:textAppearance="@style/SubHeaderText"
+        android:textColor="@color/colorOnSurface"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+        app:layout_constraintStart_toEndOf="@+id/reviewer_profile_pic"
+        app:layout_constraintTop_toTopOf="@+id/reviewer_profile_pic"
+        tools:text="Stefan " />
+
+    <ImageView
+        android:id="@+id/reviewer_profile_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description_profile_picture"
+        android:cropToPadding="true"
+        android:elevation="15dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/blank_profile_picture" />
+
+
+    <TextView
+        android:id="@+id/reviewerReview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:paddingRight="4dp"
+        android:textAppearance="@style/ContentText"
+        android:textColor="@color/colorOnSurface"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/reviewer_username"
+        app:layout_constraintTop_toBottomOf="@+id/reviewer_username"
+        tools:text="Some maybe long review i wrote about the user Some maybe long review i wrote about the user Some maybe long review i wrote about the user Some maybe long review i wrote about the user" />
+</android.support.constraint.ConstraintLayout>

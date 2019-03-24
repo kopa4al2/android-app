@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            tools:context=".fragments.RegisterIntercityTravelFragment">
+
+            <com.example.sharedtravel.views.CitiesSpinner
+                android:id="@+id/sp_intercity_start_location"
+                style="@style/OutlinedButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/choose_start_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.example.sharedtravel.views.CitiesSpinner
+                android:id="@+id/sp_intercity_end_location"
+                style="@style/OutlinedButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/choose_end_location"
+                app:layout_constraintEnd_toEndOf="@+id/sp_intercity_start_location"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sp_intercity_start_location" />
+
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_intercity_choose_day"
+                style="@style/OutlinedButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/day_of_departure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sp_intercity_end_location" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_intercity_choose_time"
+                style="@style/OutlinedButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/time_of_departure"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_intercity_additional_info_layout" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_intercity_remove_time"
+                style="@style/OutlinedButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                android:text="@string/remove_time"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_intercity_choose_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_intercity_choose_time"
+                app:layout_constraintTop_toTopOf="@+id/btn_intercity_choose_time" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_intercity_place_for_luggage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:text="@string/space_for_luggage"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="@+id/sp_intermediate_stops"
+                app:layout_constraintStart_toStartOf="@+id/sp_intermediate_stops"
+                app:layout_constraintTop_toBottomOf="@+id/btn_intercity_choose_time"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/et_intercity_space_for_people_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:hintTextAppearance="@style/HintTextAppearance"
+                app:helperTextTextAppearance="@style/HelperTextAppearance"
+                android:hint="@string/how_many_passengers_can_you_take"
+                app:helperText="@string/invalid_passenger_space"
+                app:helperTextEnabled="true"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_intercity_choose_day">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_intercity_space_for_ppl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/et_intercity_additional_info_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:hintTextAppearance="@style/HintTextAppearance"
+                app:helperTextTextAppearance="@style/HelperTextAppearance"
+                android:hint="@string/additional_info_hint"
+                app:helperText="@string/additional_info_helper_text"
+                app:helperTextEnabled="true"
+                app:hintEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_intercity_space_for_people_layout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_intercity_additional_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textMultiLine"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    android:textAppearance="@style/TextAppearance.AppCompat" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_register_intercity"
+                style="@style/FilledButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/add_intercity_travel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sp_intermediate_stops" />
+
+
+            <com.example.sharedtravel.views.CitiesSpinner
+                android:id="@+id/sp_intermediate_stops"
+                style="@style/OutlinedButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/intermediate_stops"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb_intercity_place_for_luggage" />
+
+
+            <LinearLayout
+                android:id="@+id/intermediate_stops_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/btn_register_intercity"
+                app:layout_constraintStart_toStartOf="@+id/sp_intermediate_stops"
+                app:layout_constraintTop_toBottomOf="@+id/sp_intermediate_stops">
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <include
+            layout="@layout/loading_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+</ScrollView>

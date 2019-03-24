@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/single_review_container"
+    app:cardBackgroundColor="@color/colorSurface"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:foregroundGravity="top"
+            style="@android:style/Widget.Holo.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/reviewer_username"
+            app:layout_constraintEnd_toEndOf="@+id/reviewerReview"
+            app:layout_constraintTop_toTopOf="@+id/reviewer_username" />
+
+        <TextView
+            android:id="@+id/reviewer_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:includeFontPadding="false"
+            android:maxEms="8"
+            android:textAppearance="@style/SubHeaderText"
+            app:layout_constraintEnd_toStartOf="@+id/ratingBar"
+            app:layout_constraintStart_toEndOf="@+id/reviewer_profile_pic"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Stefan " />
+
+        <ImageView
+            android:id="@+id/reviewer_profile_pic"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_profile_picture"
+            android:cropToPadding="true"
+            android:elevation="15dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/blank_profile_picture" />
+
+
+        <TextView
+            android:id="@+id/reviewerReview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:textAppearance="@style/ContentText"
+            android:scrollbarFadeDuration="0"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/reviewer_profile_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/reviewer_username"
+            app:layout_constraintTop_toBottomOf="@+id/reviewer_username"
+            tools:text="Some review i wrote about the user" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

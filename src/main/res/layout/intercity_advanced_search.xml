@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="50dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp">
+
+        <CheckBox
+            android:id="@+id/cb_space_for_luggage_find_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:text="@string/space_for_luggage"
+            android:textAppearance="@style/CheckBoxTextAppearance"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="@+id/cb_direct_travel"
+            app:layout_constraintTop_toBottomOf="@+id/cb_direct_travel" />
+
+        <CheckBox
+            android:id="@+id/cb_direct_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="5dp"
+            android:text="@string/no_intermediate_stop"
+            android:textAppearance="@style/CheckBoxTextAppearance"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cb_exact_departure_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:text="@string/make_search_date_exact_day"
+            android:textAppearance="@style/CheckBoxTextAppearance"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cb_space_for_luggage_find_travel"
+            app:layout_constraintTop_toBottomOf="@+id/cb_space_for_luggage_find_travel" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_more_options_confirm"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/confirm"
+            android:textAppearance="@style/AppInteractionTextAppearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_more_options_cancel" />
+
+        <!--style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"-->
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_more_options_cancel"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/cancel"
+            android:textAppearance="@style/AppInteractionTextAppearance"
+            app:layout_constraintEnd_toStartOf="@+id/btn_more_options_confirm"
+            app:layout_constraintTop_toBottomOf="@+id/cb_exact_departure_date" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.card.MaterialCardView>

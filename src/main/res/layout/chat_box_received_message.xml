@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_box_profile_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/blank_profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/frameLayout2"
+        style="@style/ChatBubbleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxWidth="200dp"
+        app:cardBackgroundColor="@color/triadicLight"
+        app:layout_constraintStart_toEndOf="@+id/chat_box_profile_pic"
+        app:layout_constraintTop_toTopOf="@+id/chat_box_profile_pic">
+
+        <TextView
+            android:id="@+id/chat_box_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/ChatBubbleTextAppearance"
+            android:maxWidth="200dp"
+            android:padding="15dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:text="Some long message that the user hass sent" />
+    </android.support.design.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/chat_box_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorOnSurface"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_box_profile_pic"
+        tools:text="11:23" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,491 @@
+<resources>
+    <!--FACEBOOK-->
+    <string name="facebook_app_id" translatable="false">1184441138399115</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1184441138399115</string>
+
+    <string name="app_name">HitchHikers</string>
+
+
+    <string name="show_travel_results">Show results</string>
+
+
+    <!--CONTENT DESCRIPTION-->
+    <string name="content_description_profile_picture">profile picture</string>
+    <string name="car_image">car image</string>
+
+    <!--AUTHENTICATION-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register_button">Sign up</string>
+    <string name="login_button">Sign in</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_password">Password must be at least 6 symbols</string>
+    <string name="sign_out">Logout</string>
+
+    <!--MISC-->
+    <string name="or_word">or</string>
+    <string name="cancel">Cancel</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="not_logged_in_menu">You are not logged in</string>
+    <string name="empty_field_error">Please fill this field</string>
+    <string name="open">Open</string>
+    <string name="close">close</string>
+    <string name="account">Account</string>
+    <string name="exit_app_prompt">You are about to exit the app</string>
+    <string name="not_specified">not specified</string>
+    <string name="confirm">Confirm</string>
+    <string name="navigation_my_profile">My Profile</string>
+
+    <!--TRAVEL-->
+    <string name="urban">Urban travel</string>
+    <string name="intercity_travel">Intercity travel</string>
+    <string name="register_intercity_travel">New travel</string>
+    <string name="find_intercity_travel">I hitch hike</string>
+    <string name="register_urban_travel">Register urban travel</string>
+    <string name="find_urban_travel">Find urban travel</string>
+
+    <string name="ERROR_INVALID_CUSTOM_TOKEN">The custom token format is incorrect. Please check the documentation.</string>
+    <string name="ERROR_INVALID_CREDENTIAL">The supplied auth credential is malformed or has expired.</string>
+    <string name="ERROR_INVALID_EMAIL">The email address is badly formatted.</string>
+    <string name="ERROR_WRONG_PASSWORD">The password is invalid or the user does not have a password.</string>
+    <string name="ERROR_USER_MISMATCH">The supplied credentials do not correspond to the previously signed in user.</string>
+    <string name="ERROR_REQUIRES_RECENT_LOGIN">This operation is sensitive and requires recent authentication. Log in again before retrying this request.</string>
+    <string name="ERROR_ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL">An account already exists with the same email address but different sign-in credentials. Sign in using a provider associated with this email address.</string>
+    <string name="ERROR_EMAIL_ALREADY_IN_USE">The email address is already in use by another account.</string>
+    <string name="ERROR_CREDENTIAL_ALREADY_IN_USE">This credential is already associated with a different user account.</string>
+    <string name="ERROR_USER_DISABLED">The user account has been disabled by an administrator.</string>
+    <string name="ERROR_USER_TOKEN_EXPIRED">The user\'s credential is no longer valid. The user must sign in again.</string>
+    <string name="ERROR_USER_NOT_FOUND">There is no user record corresponding to this identifier. The user may have been deleted.</string>
+    <string name="ERROR_INVALID_USER_TOKEN">The user\'s credential is no longer valid. The user must sign in again.</string>
+    <string name="ERROR_OPERATION_NOT_ALLOWED">This operation is not allowed. You must enable this service in the console.</string>
+    <string name="ERROR_WEAK_PASSWORD">The given password is invalid.</string>
+    <string name="remember_me">Remember me</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_start_location">Choose start location</string>
+    <string name="choose_end_location">Choose destination</string>
+    <string name="choose_city">Select city</string>
+    <string name="choose">choose</string>
+    <string name="day_of_departure">Day of departure</string>
+    <string name="time_of_departure">Time of departure</string>
+    <string name="space_for_luggage">Place for luggage</string>
+    <string name="how_many_passengers_can_you_take">How many people can you take</string>
+    <string name="additional_info_hint">Aditional information</string>
+    <string name="intermediate_stops">Intermediate stops</string>
+    <string name="add_stop">Add stop</string>
+    <string name="search">Search</string>
+    <string name="cities_chosen">Chosen Cities</string>
+    <string name="add_intercity_travel">Add travel</string>
+
+
+    <!--INTERCITY TRAVEL VALIDATION EXCEPTION-->
+    <string name="start_city_not_selected">Start city is not selected</string>
+    <string name="end_city_not_selected">Destination city is not selected</string>
+    <string name="empty_passanger_space">Please select space for passangers</string>
+    <string name="invalid_passenger_space">Passenger space can be between 1 and 4</string>
+    <string name="date_of_departure_not_seleted">Please select date of departure</string>
+    <string name="date_of_departure_before_today">Date of departure cannot be in the past</string>
+    <string name="start_city_same_as_destination">Start city cannot be same as destination</string>
+    <string name="intermediate_stop_same_as_start_or_destination">One or more of intermediate stops are the same as start city or destination city</string>
+    <string name="confirm_register_travel_title">Confirm your travel</string>
+    <string name="date_of_departure">Date of departure</string>
+    <string name="hour_of_departure">Time of departure</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="traveling_after">Traveling after</string>
+    <string name="advanced_search">Advanced search</string>
+    <string name="space_for_passangers">Space for passengers</string>
+    <string name="no_intermediate_stop">Search in intermediate stops </string>
+    <string name="start_date">Start date</string>
+    <string name="travel_between">Travel between:</string>
+    <string name="end_date">End date</string>
+    <string name="none">none</string>
+    <string name="click_for_more_info">click for more info</string>
+    <string name="hour_not_selected">not selected</string>
+    <string name="next_page">»</string>
+    <string name="prev_page">«</string>
+    <string name="user_creator">Creator</string>
+    <string name="travel_info">Travel info</string>
+    <string name="travel_successfully_added">Travel added successfully</string>
+    <string name="show_travel">Show travel</string>
+    <string name="show_user">Show user</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="no_internet_message">The app requires internet to function properly,would you like to turn your wifi?</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="label_phone">Phone number:</string>
+    <string name="changes_wont_affect_original_profile">Changes you make will affect only your app profile</string>
+    <string name="add_info">add info</string>
+    <string name="message_user">Send message</string>
+    <string name="view_travels">Тravels</string>
+    <string name="content_description_notification">Notifications</string>
+    <string name="show_all_messages">Show all messages</string>
+    <string name="email_will_change_after_verification">You need to verify the email for changes to take effect</string>
+    <string name="phone_will_change_after_confirm">You will receive sms to confirm the change</string>
+    <string name="leave_blank_to_remove">Leave blank to remove</string>
+    <string name="invalid_phone_number">Invalid phone number</string>
+    <string name="click_to_add_username">Click to add username</string>
+    <string name="invalid_username">Username can not be empty or longer than 16 character</string>
+    <string name="invalid_more_info">Additional information can not exceed 255 symbols</string>
+    <string name="username_represents_you">This is the name everyone will recognize you with</string>
+    <string name="phone_example_hint">Phone must start with leading 0 followed by 9 numbers</string>
+    <string name="email_example">ex. MAIL@PROVIDER.DOMAIN</string>
+    <string name="more_info_hint">Say something about yourself</string>
+    <string name="username_hint">Username</string>
+    <string name="enter_message">Enter message</string>
+    <string name="send_message">Send message</string>
+    <string name="make_search_date_exact_day">Search exact date \\n(by default will show travels that depart on that date or later)</string>
+    <string name="username_helper_text">Username must be between 3 and 16 characters.</string>
+    <string name="required">Required</string>
+    <string name="successfully_registered">Registered successfully</string>
+    <string name="additional_info_helper_text">More info about the travel</string>
+    <string name="remove_time">Remove time</string>
+    <string name="confirm_dialog_title">Please confirm</string>
+    <string name="too_many_intermediate_stops_error">You cannot have more than 4 intermediate stops</string>
+    <string name="messages">Messages</string>
+    <string name="successfully_logged_in">Successfully logged in</string>
+    <string name="chat_messages_are_deleted_on_scheluded_time">Chat messages are deleted every now and then</string>
+    <string name="content_description_delete">Delete</string>
+    <string name="creation_date">Created on:</string>
+    <string name="confirm_delete_travel">You are about to delete this travel</string>
+    <string name="confirm_delete_chat">All messages with this user will be removed</string>
+    <string name="successfully_deleted_travel">Successfully deleted travel</string>
+    <string name="successfully_deleted_chat">Successfully deleted chat</string>
+    <string name="email_change_initiated">Check your old email for confirmation</string>
+    <string name="successfully_added_phone_number">Successfully linked phone number</string>
+
+
+    <string-array name="column_headers">
+        <item>"Departing from:"</item>
+        <item>"Destination:"</item>
+        <item>"Travel on:"</item>
+        <item>"Hour of going:"</item>
+        <item>"Passengers space:"</item>
+        <item>"Space for luggage:"</item>
+        <item>"Intermediate Stops"</item>
+        <item>"Additional info"</item>
+    </string-array>
+    <string-array name="cities">
+        <item>"София"</item>
+        <item>"Пловдив"</item>
+        <item>"Варна"</item>
+        <item>"Бургас"</item>
+        <item>"Русе"</item>
+        <item>"Стара Загорa"</item>
+        <item>"Плевен"</item>
+        <item>"Добрич"</item>
+        <item>"Сливен"</item>
+        <item>"Шумен"</item>
+        <item>"Перник"</item>
+        <item>"Пазарджик"</item>
+        <item>"Ямбол"</item>
+        <item>"Хасково"</item>
+        <item>"Благоевград"</item>
+        <item>"Велико Търново"</item>
+        <item>"Враца"</item>
+        <item>"Габрово"</item>
+        <item>"Асеновград"</item>
+        <item>"Видин"</item>
+        <item>"Казанлък"</item>
+        <item>"Кърджали"</item>
+        <item>"Кюстендил"</item>
+        <item>"Монтана"</item>
+        <item>"Търговище"</item>
+        <item>"Димитровград"</item>
+        <item>"Силистра"</item>
+        <item>"Ловеч"</item>
+        <item>"Дупница"</item>
+        <item>"Разград"</item>
+        <item>"Горна Оряховица"</item>
+        <item>"Свищов"</item>
+        <item>"Петрич"</item>
+        <item>"Смолян"</item>
+        <item>"Сандански"</item>
+        <item>"Самоков"</item>
+        <item>"Велинград"</item>
+        <item>"Севлиево"</item>
+        <item>"Лом"</item>
+        <item>"Нова Загора"</item>
+        <item>"Карлово"</item>
+        <item>"Айтос"</item>
+        <item>"Троян"</item>
+        <item>"Ботевград"</item>
+        <item>"Харманли"</item>
+        <item>"Пещера"</item>
+        <item>"Гоце Делчев"</item>
+        <item>"Свиленград"</item>
+        <item>"Карнобат"</item>
+        <item>"Панагюрище"</item>
+        <item>"Чирпан"</item>
+        <item>"Попово"</item>
+        <item>"Раковски"</item>
+        <item>"Радомир"</item>
+        <item>"Първомай"</item>
+        <item>"Нови Искър"</item>
+        <item>"Поморие"</item>
+        <item>"Несебър"</item>
+        <item>"Червен бряг"</item>
+        <item>"Козлодуй"</item>
+        <item>"Ихтиман"</item>
+        <item>"Нови пазар"</item>
+        <item>"Берковица"</item>
+        <item>"Раднево"</item>
+        <item>"Провадия"</item>
+        <item>"Разлог"</item>
+        <item>"Балчик"</item>
+        <item>"Бяла Слатина"</item>
+        <item>"Каварна"</item>
+        <item>"Костинброд"</item>
+        <item>"Банкя"</item>
+        <item>"Стамболийски"</item>
+        <item>"Етрополе"</item>
+        <item>"Кнежа"</item>
+        <item>"Левски "</item>
+        <item>"Павликени"</item>
+        <item>"Мездра"</item>
+        <item>"Елхово"</item>
+        <item>"Тетевен"</item>
+        <item>"Луковит"</item>
+        <item>"Тутракан"</item>
+        <item>"Трявна"</item>
+        <item>"Девня"</item>
+        <item>"Средец"</item>
+        <item>"Омуртаг"</item>
+        <item>"Сопот"</item>
+        <item>"Исперих"</item>
+        <item>"Велики Преслав"</item>
+        <item>"Бяла "</item>
+        <item>"Ракитово"</item>
+        <item>"Гълъбово"</item>
+        <item>"Кричим"</item>
+        <item>"Лясковец"</item>
+        <item>"Септември"</item>
+        <item>"Момчилград"</item>
+        <item>"Банско"</item>
+        <item>"Белене"</item>
+        <item>"Аксаково"</item>
+        <item>"Белослав"</item>
+        <item>"Своге"</item>
+        <item>"Дряново"</item>
+        <item>"Любимец"</item>
+        <item>"Кубрат"</item>
+        <item>"Пирдоп"</item>
+        <item>"Елин Пелин "</item>
+        <item>"Симитли"</item>
+        <item>"Сливница"</item>
+        <item>"Златоград"</item>
+        <item>"Хисаря"</item>
+        <item>"Дулово"</item>
+        <item>"Долни чифлик"</item>
+        <item>"Симеоновград"</item>
+        <item>"Генерал Тошево"</item>
+        <item>"Тервел"</item>
+        <item>"Костенец"</item>
+        <item>"Девин"</item>
+        <item>"Мадан"</item>
+        <item>"Стралджа"</item>
+        <item>"Царево"</item>
+        <item>"Вършец"</item>
+        <item>"Твърдица"</item>
+        <item>"Куклен"</item>
+        <item>"Бобов дол"</item>
+        <item>"Котел"</item>
+        <item>"Съединение "</item>
+        <item>"Елена"</item>
+        <item>"Оряхово"</item>
+        <item>"Якоруда"</item>
+        <item>"Божурище"</item>
+        <item>"Тополовград"</item>
+        <item>"Белоградчик"</item>
+        <item>"Стражица"</item>
+        <item>"Камено"</item>
+        <item>"Чепеларе"</item>
+        <item>"Созопол"</item>
+        <item>"Перущица"</item>
+        <item>"Суворово"</item>
+        <item>"Златица"</item>
+        <item>"Крумовград"</item>
+        <item>"Долна баня"</item>
+        <item>"Дългопол"</item>
+        <item>"Ветово"</item>
+        <item>"Полски Тръмеш"</item>
+        <item>"Тръстеник"</item>
+        <item>"Койнаре"</item>
+        <item>"Долни Дъбник"</item>
+        <item>"Славяново"</item>
+        <item>"Годеч"</item>
+        <item>"Правец"</item>
+        <item>"Игнатиево"</item>
+        <item>"Костандово"</item>
+        <item>"Брацигово"</item>
+        <item>"Две могили"</item>
+        <item>"Стрелча"</item>
+        <item>"Неделино"</item>
+        <item>"Свети Влас"</item>
+        <item>"Сапарева баня"</item>
+        <item>"Брезник"</item>
+        <item>"Смядово"</item>
+        <item>"Ардино"</item>
+        <item>"Дебелец"</item>
+        <item>"Никопол"</item>
+        <item>"Шивачево"</item>
+        <item>"Белово"</item>
+        <item>"Цар Калоян "</item>
+        <item>"Мартен"</item>
+        <item>"Ивайловград"</item>
+        <item>"Кресна"</item>
+        <item>"Върбица"</item>
+        <item>"Рудозем"</item>
+        <item>"Вълчедръм"</item>
+        <item>"Приморско"</item>
+        <item>"Глоджево"</item>
+        <item>"Летница"</item>
+        <item>"Мъглиж"</item>
+        <item>"Искър (град)"</item>
+        <item>"Шабла"</item>
+        <item>"Гулянци"</item>
+        <item>"Долна Митрополия"</item>
+        <item>"Крън"</item>
+        <item>"Вълчи дол"</item>
+        <item>"Сливо поле"</item>
+        <item>"Баня (град)"</item>
+        <item>"Драгоман"</item>
+        <item>"Сунгурларе"</item>
+        <item>"Батак"</item>
+        <item>"Джебел"</item>
+        <item>"Завет"</item>
+        <item>"Криводол"</item>
+        <item>"Мизия"</item>
+        <item>"Белица"</item>
+        <item>"Каспичан"</item>
+        <item>"Кула"</item>
+        <item>"Николаево"</item>
+        <item>"Ветрен"</item>
+        <item>"Гурково"</item>
+        <item>"Роман"</item>
+        <item>"Калофер"</item>
+        <item>"Каблешково"</item>
+        <item>"Априлци"</item>
+        <item>"Бухово"</item>
+        <item>"Долна Оряховица"</item>
+        <item>"Павел баня"</item>
+        <item>"Ябланица"</item>
+        <item>"Рила "</item>
+        <item>"Опака"</item>
+        <item>"Угърчин"</item>
+        <item>"Златарица"</item>
+        <item>"Хаджидимово"</item>
+        <item>"Добринище"</item>
+        <item>"Обзор"</item>
+        <item>"Бяла черква"</item>
+        <item>"Дунавци"</item>
+        <item>"Брегово"</item>
+        <item>"Трън"</item>
+        <item>"Садово"</item>
+        <item>"Килифарево"</item>
+        <item>"Лъки"</item>
+        <item>"Малко Търново"</item>
+        <item>"Доспат"</item>
+        <item>"Копривщица"</item>
+        <item>"Кочериново"</item>
+        <item>"Лозница "</item>
+        <item>"Бяла"</item>
+        <item>"Борово"</item>
+        <item>"Черноморец"</item>
+        <item>"Батановци"</item>
+        <item>"Пордим"</item>
+        <item>"Ахелой "</item>
+        <item>"Сухиндол"</item>
+        <item>"Българово"</item>
+        <item>"Брезово"</item>
+        <item>"Главиница"</item>
+        <item>"Каолиново"</item>
+        <item>"Чипровци"</item>
+        <item>"Меричлери"</item>
+        <item>"Земен"</item>
+        <item>"Плачковци"</item>
+        <item>"Кермен"</item>
+        <item>"Момин проход"</item>
+        <item>"Алфатар"</item>
+        <item>"Грамада"</item>
+        <item>"Сеново"</item>
+        <item>"Бойчиновци"</item>
+        <item>"Антоново"</item>
+        <item>"Ахтопол"</item>
+        <item>"Бобошево"</item>
+        <item>"Шипка"</item>
+        <item>"Болярово"</item>
+        <item>"Димово"</item>
+        <item>"Брусарци"</item>
+        <item>"Китен"</item>
+        <item>"Клисура"</item>
+        <item>"Плиска"</item>
+        <item>"Маджарово"</item>
+        <item>"Мелник"</item>
+        "
+    </string-array>
+
+
+    <string name="map_location_permission_refused">You have rejected the app\'s permission to access your current location.</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="where_do_you_start_from">Where do you start from</string>
+    <string name="start_loc_required">Start location is required</string>
+    <string name="inbetween_stops">Pick places that are on your way and you can stop and leave someone.</string>
+    <string name="optional">optional</string>
+    <string name="where_is_your_end_point">Where is your final stop</string>
+    <string name="end_loc_required">Please choose an ending point</string>
+    <string name="you_start_from_here">You start here</string>
+    <string name="you_can_stop_here">You can stop here</string>
+    <string name="you_arrive_here">You arrive here</string>
+    <string name="add_urban_frequency_every_day">Every day</string>
+    <string name="add_urban_frequency_every_work_day">Every work day(MON-FRI)</string>
+    <string name="add_urban_frequency_once">once</string>
+    <string name="add_urban_frequency_other">other</string>
+    <string name="sunday">SUN</string>
+    <string name="saturday">SAT</string>
+    <string name="friday">FRI</string>
+    <string name="thursday">THU</string>
+    <string name="wednesday">WED</string>
+    <string name="tuesday">TUE</string>
+    <string name="monday">MON</string>
+    <string name="date_of_travel">Date of travel</string>
+    <string name="time_of_travel">Time you take off</string>
+    <string name="choose_how_often_will_travel">Please select how often you will travel</string>
+    <string name="how_often_will_travel">How often will this travel occure</string>
+    <string name="tap_to_remove">Tap to remove</string>
+    <string name="please_select_when_you_will_travel">Please select when will you travel</string>
+    <string name="when_will_this_travel_occure">When will the travel occure</string>
+    <string name="you_need_to_be_logged_in">You need to be logged in</string>
+    <string name="urban_travel_days">Traveling on</string>
+    <string name="ask_permission_location">HitchHikers needs permission to gather location for better user experience.You can still use the app if you declice permissions</string>
+    <string name="map_layout_normal_map">Use simpler map</string>
+    <string name="adjust_search_radius">Set the search radius</string>
+    <string name="meters">meters</string>
+    <string name="changed_map_layout_due_to_high_latency_network">Changed map type due to high latency network</string>
+    <string name="changed_map_layout_due_no_network">No network signal</string>
+    <string name="changed_map_layout_due_to_low_latency_network">Changed map layout due to slow internet connection</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="ok">Ok</string>
+    <string name="would_you_like_to_write_a_review">Would you like to write a review?</string>
+    <string name="say_something_about_this_user">Say something about this user</string>
+    <string name="your_review">your review</string>
+    <string name="no_thanks">no, thanks</string>
+    <string name="yes_please">Yes, please</string>
+    <string name="you_can_have_empty_review">You can write empty review, and keep your rating vote</string>
+    <string name="successfully_rated_user">You have successfully rated the user</string>
+    <string name="your_rating">Your rating:</string>
+    <string name="no_review">No review</string>
+    <string name="too_many_requests">Too many requests, wait a minute and try again</string>
+    <string name="error_title">Problem</string>
+    <string name="invalid_confirmation_code">Invalid confirmation code</string>
+    <string name="not_logged_in">Not logged in</string>
+    <string name="select_start_location_and_radius">Select start location and radius in which you will search</string>
+    <string name="select_destination_and_radius">Select destination and search radius</string>
+    <string name="show_all_near_me">Show everyone near me</string>
+    <string name="choose_all">Choose all</string>
+
+</resources>

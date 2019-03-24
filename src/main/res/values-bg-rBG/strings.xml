@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HitchHikers</string>
+
+    <!--CONTENT DESCRIPTION-->
+    <string name="content_description_profile_picture">profile picture</string>
+    <string name="car_image">car image</string>
+
+    <!--AUTHENTICATION-->
+    <string name="login">Вписване</string>
+    <string name="register">Регисрация</string>
+    <string name="register_button">РЕГИСТРИРАЙ СЕ</string>
+    <string name="login_button">ВЛЕЗ</string>
+    <string name="invalid_email">Невалидна поща</string>
+    <string name="invalid_password">Паролата трябва да е поне 6 символа</string>
+    <string name="sign_out">Отпиши ме</string>
+    <string name="username_hint">Потребителско име:</string>
+    <string name="username_helper_text">Потребителското ви име трябва да е между 3 и 16 символа.</string>
+    <string name="successfully_registered">Регистрирахте се успешно</string>
+    <string name="remember_me">Запомни ме</string>
+    <string name="email_example">формат: MAIL@PROVIDER.DOMAIN</string>
+
+    <!--MISC-->
+    <string name="no_internet">Няма връзка с интернет</string>
+    <string name="no_internet_message">Приложението се нуждае от интернет за да работи правилно.
+        Да включа WiFi?</string>
+    <string name="yes">Да</string>
+    <string name="no">Не</string>
+    <string name="required">Задължително</string>
+    <string name="or_word">или</string>
+    <string name="cancel">Отказ</string>
+    <string name="confirm">Потвърди</string>
+    <string name="email">Електронна поща</string>
+    <string name="password">Парола</string>
+    <string name="empty_field_error">Моля попълнете това поле</string>
+    <string name="open">Отвори</string>
+    <string name="close">Затвори</string>
+    <string name="exit_app_prompt">Ще излезете от приложението</string>
+    <string name="not_specified">не е уточнен</string>
+
+
+    <!--Меню-->
+    <!--TITLES-->
+    <string name="not_logged_in_menu"><font color="#75010101" face="serif"><i><b>Не сте вписан</b></i></font></string>
+    <string name="urban"><font color="#75010101" face="serif"><i><b>Градски превоз</b></i></font></string>
+    <string name="intercity_travel"><font color="#75010101" face="serif"><i><b>Междуградско пътуване</b></i></font></string>
+    <string name="account"><font color="#75010101" face="serif"><i><b>Профил</b></i></font></string>
+    <!--Subtitles-->
+    <string name="register_intercity_travel">Пътувам с кола</string>
+    <string name="find_intercity_travel">Пътувам на стоп</string>
+    <string name="register_urban_travel">Сподели кола</string>
+    <string name="find_urban_travel">Намери кола</string>
+
+    <string name="ERROR_INVALID_CUSTOM_TOKEN">Възникна грешка моля обърнете се към разработчиците (ERROR_INVALID_CUSTOM_TOKEN)</string>
+    <string name="ERROR_INVALID_CREDENTIAL">Въведените електрона поща име или парола са грешни.</string>
+    <string name="ERROR_INVALID_EMAIL">Електронната поща е в невалиден формат.</string>
+    <string name="ERROR_WRONG_PASSWORD">Грешна парола.</string>
+    <string name="ERROR_USER_MISMATCH">Няма такъв акаунт в системата.</string>
+    <string name="ERROR_REQUIRES_RECENT_LOGIN">Трябва да сте вписан за да извършите действието.</string>
+    <string name="ERROR_ACCOUNT_EXISTS_WITH_DIFFERENT_CREDENTIAL">Електроната поща вече се използва.</string>
+    <string name="ERROR_EMAIL_ALREADY_IN_USE">Електроната поща вече се използва.</string>
+    <string name="ERROR_CREDENTIAL_ALREADY_IN_USE">This credential is already associated with a different user account.</string>
+    <string name="ERROR_USER_DISABLED">Акаунта е забранен от администратора</string>
+    <string name="ERROR_USER_TOKEN_EXPIRED">The user\'s credential is no longer valid. The user must sign in again.</string>
+    <string name="ERROR_USER_NOT_FOUND">Несъществуващ акаунт.Акаунта може да е изтрит.</string>
+    <string name="ERROR_INVALID_USER_TOKEN">The user\'s credential is no longer valid. The user must sign in again.</string>
+    <string name="ERROR_OPERATION_NOT_ALLOWED">This operation is not allowed. You must enable this service in the console.</string>
+    <string name="ERROR_WEAK_PASSWORD">Паролата е твърде слаба.</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_start_location">Изберете начален град</string>
+    <string name="choose_end_location">Изберете дестинация</string>
+    <string name="choose_city">Изберете град</string>
+    <string name="choose">изеберете</string>
+    <string name="day_of_departure">Дата на отпатуване</string>
+    <string name="time_of_departure">Час на отпатуване</string>
+    <string name="space_for_luggage">Място за багаж</string>
+    <string name="how_many_passengers_can_you_take">Колко човека може да качите?</string>
+    <string name="additional_info_hint">Още информация</string>
+    <string name="intermediate_stops">Междинни спирки</string>
+    <string name="add_stop">Добави спирка</string>
+    <string name="search">Търси</string>
+    <string name="cities_chosen">Избрани градове</string>
+    <string name="add_intercity_travel">Добави пътуване</string>
+
+
+    <!--INTERCITY TRAVEL VALIDATION EXCEPTION-->
+    <string name="show_travel_results">Покажи резултатите</string>
+    <string name="start_city_not_selected">Началния град не е уточнен</string>
+    <string name="end_city_not_selected">Дестинацията не е уточнена</string>
+    <string name="empty_passanger_space">Моля посочете място за пътници</string>
+    <string name="invalid_passenger_space">Място за пътници може да е между 1 и 4</string>
+    <string name="date_of_departure_not_seleted">Моля въведете дата на отпатуване</string>
+    <string name="date_of_departure_before_today">Датата на пътуване не може да е в миналото</string>
+    <string name="start_city_same_as_destination">Началния град не може да съвпада с дестинацията</string>
+    <string name="intermediate_stop_same_as_start_or_destination">Една или повече междинни спирки съвпадат с началния или краен град</string>
+    <string name="confirm_register_travel_title">Потвърди пътуването</string>
+    <string name="date_of_departure">Дата на отпътуване</string>
+    <string name="hour_of_departure">Час на отпътуване</string>
+
+    <string name="from">Заминава от</string>
+    <string name="to">Пътува към</string>
+    <string name="traveling_after">Пътува след</string>
+    <string name="advanced_search">Разширено търсене</string>
+    <string name="space_for_passangers">Място за пътници</string>
+    <string name="no_intermediate_stop">Търси и в в междинните спирки</string>
+    <string name="start_date">Начална дата</string>
+    <string name="travel_between">Пътува между:</string>
+    <string name="end_date">Крайна дата</string>
+    <string name="none">няма</string>
+    <string name="click_for_more_info">натиснете за повече информацция</string>
+    <string name="hour_not_selected">не е уточнен</string>
+    <string name="next_page">»</string>
+    <string name="prev_page">«</string>
+    <string name="user_creator">Публикувал</string>
+    <string name="travel_info">Информация</string>
+    <string name="travel_successfully_added">Пътуването добавено успешно</string>
+    <string name="show_travel">Синтезирай пътуването</string>
+    <string name="show_user">Отвори профил</string>
+    <string name="navigation_my_profile">Профил</string>
+    <string name="clear_filters">Изчисти филтрите</string>
+    <string name="label_phone">Телефонен номер</string>
+    <string name="changes_wont_affect_original_profile">Промените, които направите ще бъдат само за профила в приложението</string>
+    <string name="add_info">Добави информация</string>
+    <string name="content_description_notification">Известия</string>
+    <string name="make_search_date_exact_day">Търси по точна дата</string>
+    <string name="show_all_messages">Всички съобщения</string>
+    <string name="email_will_change_after_verification">Промените ще влязат в сила, когато потвърдите новата си поща</string>
+    <string name="phone_will_change_after_confirm">Ще получите смс с код за потвърждение</string>
+    <string name="click_to_add_username">Натиснете за да добавите потребителско име</string>
+    <string name="invalid_username">Името ви не може да е празно или повече от 16 знака</string>
+    <string name="invalid_more_info">Допълнителната информация не може да надхвърля 255 знака</string>
+    <string name="username_represents_you">Това е името,с което хората ще ви разпознават</string>
+    <string name="phone_example_hint">пример:0876577328</string>
+    <string name="more_info_hint">Кажете нещо за себе си</string>
+    <string name="leave_blank_to_remove">Оставете празно за да премахнете</string>
+    <string name="invalid_phone_number">Невалиден телефонен номер (трябва да започва с 0 следвана от 9 цифри)</string>
+    <string name="message_user">Изпрати съобщение</string>
+    <string name="view_travels">Пътувания</string>
+
+    <string name="enter_message">Въведете съобщение</string>
+    <string name="send_message">Изпрати</string>
+
+    <string name="additional_info_helper_text">Повече информация за пътуването</string>
+    <string name="remove_time">Изчисти времето</string>
+    <string name="confirm_dialog_title">Потвърдете</string>
+    <string name="too_many_intermediate_stops_error">You cannot have more than 4 intermediate stops</string>
+    <string name="messages">Съобщения</string>
+    <string name="successfully_logged_in">Успешно се вписахте</string>
+    <string name="chat_messages_are_deleted_on_scheluded_time">Съобщенията по стари от 1 седмица се изтриват</string>
+    <string name="content_description_delete">Delete</string>
+    <string name="creation_date">Създадено на: </string>
+    <string name="confirm_delete_travel">Ще изтриете това пътуване</string>
+    <string name="confirm_delete_chat">Всички съобщения с този потребител ще бъдат изтрити</string>
+    <string name="successfully_deleted_travel">Успешно изтрихте пътуването</string>
+    <string name="successfully_deleted_chat">Успешно изтрихте чата</string>
+    <string name="email_change_initiated">Изпратихме ви линк на старата поща за потвърждение смяната на пощата ви.</string>
+    <string name="successfully_added_phone_number">Успешно записахте номера си</string>
+    <string name="map_location_permission_refused">You have rejected the app\'s permission to access your current location.</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="where_do_you_start_from">Where do you start from</string>
+    <string name="start_loc_required">Start location is required</string>
+    <string name="inbetween_stops">Pick places that are on your way and you can stop and leave someone.</string>
+    <string name="optional">optional</string>
+    <string name="where_is_your_end_point">Where is your final stop</string>
+    <string name="end_loc_required">Please choose an ending point</string>
+    <string name="you_start_from_here">You start here</string>
+    <string name="you_can_stop_here">You can stop here</string>
+    <string name="you_arrive_here">You arrive here</string>
+    <string name="add_urban_frequency_every_day">Every day</string>
+    <string name="add_urban_frequency_every_work_day">Every work day(MON-FRI)</string>
+    <string name="add_urban_frequency_once">once</string>
+    <string name="add_urban_frequency_other">other</string>
+    <string name="sunday">НЕД</string>
+    <string name="saturday">СЪБ</string>
+    <string name="friday">ПЕТ</string>
+    <string name="thursday">ЧЕТ</string>
+    <string name="wednesday">СРЯ</string>
+    <string name="tuesday">ВТО</string>
+    <string name="monday">ПОН</string>
+    <string name="date_of_travel">Date of travel</string>
+    <string name="time_of_travel">Time you take off</string>
+    <string name="choose_how_often_will_travel">Please select how often you will travel</string>
+    <string name="how_often_will_travel">How often will this travel occure</string>
+    <string name="tap_to_remove">Remove</string>
+    <string name="please_select_when_you_will_travel">Please select when will you travel</string>
+    <string name="when_will_this_travel_occure">When will the travel occure</string>
+    <string name="you_need_to_be_logged_in">You need to be logged in</string>
+    <string name="urban_travel_days">Traveling on</string>
+    <string name="ask_permission_location">HitchHikers needs permission to gather location for better user experience.You can still use the app if you declice permissions</string>
+    <string name="map_layout_normal_map">Опростена карта</string>
+    <string name="adjust_search_radius">Set the search radius</string>
+    <string name="meters">meters</string>
+    <string name="changed_map_layout_due_to_high_latency_network">Changed map type due to high latency network</string>
+    <string name="changed_map_layout_due_no_network">No network signal</string>
+    <string name="changed_map_layout_due_to_low_latency_network">Changed map layout due to slow internet connection</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="ok">Ok</string>
+    <string name="would_you_like_to_write_a_review">Would you like to write a review?</string>
+    <string name="say_something_about_this_user">Say something about this user</string>
+    <string name="your_review">вашето ревю</string>
+    <string name="no_thanks">Не, благодаря</string>
+    <string name="yes_please">Да, моля</string>
+    <string name="you_can_have_empty_review">Може да напишете празно ревю и само да оцените потребителя</string>
+    <string name="successfully_rated_user">Успешно оценихте потребителя</string>
+    <string name="your_rating">Вашата оценка:</string>
+    <string name="no_review">Няма ревю</string>
+    <string name="too_many_requests">Твърде много заявки, почакайте минутка и опитайте отново</string>
+    <string name="error_title">Възникна проблем</string>
+    <string name="invalid_confirmation_code">Невалиден код за потвърждение</string>
+    <string name="not_logged_in">Не сте вписан</string>
+    <string name="select_start_location_and_radius">Select start location and radius in which you will search</string>
+    <string name="select_destination_and_radius">Select destination and search radius</string>
+    <string name="show_all_near_me">Show everyone near me</string>
+    <string name="choose_all">Choose all</string>
+
+    <string-array name="column_headers">
+        <item>"Начален град:"</item>
+        <item>"Краен град:"</item>
+        <item>"Дата на отпатуване:"</item>
+        <item>"Час:"</item>
+        <item>"Място за пътници:"</item>
+        <item>"Място за багаж:"</item>
+        <item>"Междинни спирки"</item>
+        <item>"Допълнителна информация"</item>
+    </string-array>
+</resources>
